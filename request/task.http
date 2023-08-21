@@ -1,0 +1,32 @@
+###
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?page=3&size=3&title=angular
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio web11 con angular",
+    "description": "trabajo freelance",
+    "done": true
+}
+
+###
+GET http://localhost:3000/api/tasks/64da793ca854e80e0c6ef9b1
+
+###
+DELETE http://localhost:3000/api/tasks/64de9fd94e5869cf03431923
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+PUT http://localhost:3000/api/tasks/64da7d9ff1310d6d4f4b3cd3
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio web5"
+}
